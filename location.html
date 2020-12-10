@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="classes.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="classes.js" type="text/javascript"></script>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=PT+Sans:400italic' rel='stylesheet' type='text/css'>
+
+   <title>Our Locations </title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?
+key=AIzaSyBC_UmCGOnrI5BPpoltFEVJEbr4qtvBULU
+">
+</script>
+
+    <script type="text/javascript">
+        var locations = [
+		
+            ['Ibra Gym1', 40.60431866051296, -74.00754573029955, 1],
+            ['Ibra Gym2', 40.6130080088646, -73.99004037537375, 2],
+            ['Ibra Gym3', 40.61028206042246, -73.95719913258563, 3],
+            ['Ibra Gym4', 40.60346670280201, -73.9729090664934, 4],
+            ['Ibra Gym5', 40.60539779135748, -73.97410601383875, 5],
+            ['Ibra Gym6', 40.59227665036882, -73.96370753377599, 6]
+        ];
+        function InitMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: new google.maps.LatLng(40.60570586917631, -73.99778341728295),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            var infowindow = new google.maps.InfoWindow();
+            var marker, i;
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map
+                });
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+            }
+        }
+    </script>
+
+<style>
+.body {
+  background-image: url('images0.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.location{
+	text-align:center;
+	color:white;
+	padding-bottom:10px;
+}
+.footer{
+  padding-top: 25px;
+  text-align: center;
+  width:100%;
+  background:black;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+</style>
+
+		
+    </head>
+	
+
+<body onload="InitMap();" class='body' >
+
+
+
+	
+<div id="row1">
+
+<div id="hexagon">
+</div>
+
+
+
+  
+  <div class='navbar'>
+
+  <ul>
+  <li><a href='index.html'><span>Home</span></a></li>
+  <li ><a href='classes.html'><span> Classes</span></a></li>
+  <li><a href='subscribe.html'><span>Membership</span></a></li>
+   <li><a href='location.html'><span>Locations</span></a></li>
+   <li><a href='aboutUs.html'><span>About</span></a></li>
+       <li><a href='contact.html'><span>Contact Us</span></a></li>
+
+   </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="about-section">
+  <h1> Our Locations<h1>
+  <h2>We aim to serve you better. We have opened 6 new location just in Brooklyn. .</h2>
+</div>
+
+
+
+    <div id="map" style="height: 500px; width: auto;">
+    </div>
+
+<br>
+
+<h2> Comments & Rating : </h2><br>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+<br>
+<p style="font-size:20px;">Great Place Ever. </p>
+<br>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<p style="font-size:20px;">Wonderful Place Ever. I love it</p>
+<br>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<p style="font-size:20px;">No Comments!!!</p>
+<br>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<p style="font-size:20px;">Stuff working are wonderful!!!</p>
+<br>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star "></span>
+<br>
+<p style="font-size:20px;">Need Jakoziiiiii</p>
+<br>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br>
+<p style="font-size:20px;">Great palces to learn how to take care of your body</p>
+<br>
+
+		
+		
+		
+<div class="footer">
+<div class="location">
+<p>
+8444 40th Avenue Brooklyn, New York, 11214<br>
+Phone: 121-121-1114
+<p>Copyright ©2020 All Rights Reserved to Mustapha_Bouchaqour®Ibra-gym</p>
+
+</p>
+
+</div>
+
+
+
+<a href="https://www.facebook.com/BlinkFitness/"> <img class="social" src="facebook.svg"></a>
+<a href="https://www.youtube.com/watch?v=g3ZNprweps0"> <img class="social" src="youtube.svg"></a>
+      
+
+</div>
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+    </body> 
+</html>

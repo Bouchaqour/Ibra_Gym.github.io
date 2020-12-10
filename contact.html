@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="classes.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="classes.js" type="text/javascript"></script>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=PT+Sans:400italic' rel='stylesheet' type='text/css'>
+
+<title>Ibra-gym Contact Us</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript">
+function confirmalert(){
+
+    alert("Thank you. Your comment will be submitted");
+  
+}
+</script>
+<script >
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+	  
+    }	
+
+  }
+}
+
+</script>
+
+
+<style>
+
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #4CAF50;} /* Green */
+#myProgress {
+
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #4CAF50;
+}
+
+
+
+.body1 {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-image: url('images0.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+</head>
+
+
+
+
+
+
+
+<body class='body1'>
+
+
+<div id="row1">
+
+<div id="hexagon">
+
+</div>
+
+
+
+
+
+<div class='navbar'>
+
+  <ul>
+  <li><a href='index.html'><span>Home</span></a></li>
+  <li ><a href='classes.html'><span> Classes</span></a></li>
+  <li><a href='subscribe.html'><span>Membership</span></a></li>
+   <li><a href='location.html'><span>Locations</span></a></li>
+   <li><a href='aboutUs.html'><span>About</span></a></li>
+       <li><a href='contact.html'><span>Contact Us</span></a></li>
+
+  </ul>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="about-section">
+  <h1> Contact Us<h1>
+  <h2>Feel free to share with us any thought you may have about how we should serve you better.</h2>
+</div>
+<div class="container">
+  <div style="text-align:center">
+    
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="map.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Select Gym</label>
+        <select id="country" name="country">
+          <option value="australia">Gym1</option>
+          <option value="canada">Gym2</option>
+		  <option value="canada">Gym3</option>
+          <option value="canada">Gym4</option>
+          <option value="canada">Gym5</option>
+          <option value="canada">Gym6</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+       </form>
+		
+				
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+
+<br>
+<button class="button button1" onclick = "confirmalert(); move()">Submit</button> 
+<button class="button button1" onclick = "location.reload();">Empty the field</button> 
+
+
+		
+		
+		
+		
+		
+		
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+<div class="location">
+<p>
+8444 40th Avenue Brooklyn, New York, 11214<br>
+Phone: 121-121-1114
+<p>Copyright ©2020 All Rights Reserved to Mustapha_Bouchaqour®Ibra-gym</p>
+
+</p>
+
+</div>
+
+
+
+
+
+
+
+
+<a href="https://www.facebook.com/BlinkFitness/"> <img class="social" src="facebook.svg"></a>
+<a href="https://www.youtube.com/watch?v=g3ZNprweps0"> <img class="social" src="youtube.svg"></a>
+
+
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

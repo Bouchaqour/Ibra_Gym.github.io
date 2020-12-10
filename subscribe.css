@@ -1,0 +1,201 @@
+*{margin:0;padding:0;}
+
+html{
+
+}
+
+.gym{
+
+  width:650px;
+  height:300px;
+  border: 1px solid #CCC;
+  padding: 1px;
+}
+
+
+#menu_bar{
+  width:100%;
+
+  height:50px;
+
+  position:fixed;
+
+}
+
+#row1{
+	height:75px;
+	width:100%;
+	background-color:rgb(0, 0, 0);
+	position: relative
+}
+
+
+ #hexagon {
+
+ margin-left:15%;
+
+
+ width: 100px;
+ height: 75px;
+ background:  	#808080 ;
+ position: relative; }
+
+
+ #hexagon:before { content: "";
+ position: absolute;
+ bottom: -30px;
+ left: 0;
+ width: 0;
+ height: 0;
+ border-left: 50px solid transparent;
+ border-right: 50px solid transparent;
+ border-top: 30px solid #808080 ;
+}
+
+
+.navbar {
+  position: absolute;
+
+
+text-align: center;
+
+margin-bottom:0px;
+height: 20px;
+
+bottom:40px;
+    right:6%;
+
+
+}
+
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+  text-align: center;
+
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+    margin: 0 auto;
+    width:150px;
+}
+
+
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+.navbar ul li a:hover:before {
+  width: 100%;
+}
+
+.navbar ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  height: 2px;
+  width: 0;
+  background:black;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+
+.content{
+height:1000px;
+padding-top:100px;
+text-align:center;
+	font-size:25px;
+
+}
+
+
+fieldset {
+    height: 300px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.myform{
+	margin:0 auto;
+width: 600px;
+
+padding-left:25px;
+text-align:left;
+}
+
+.myform legend{
+	font-size:25px;
+	padding-bottom:10px;
+}
+.myform input{
+margin-bottom:15px;
+}
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+
+.sub{
+
+height: 25px;
+width:75px;
+margin-right:25px;
+margin-top: 15px;
+}
+.location{
+	text-align:center;
+	color:white;
+	padding-bottom:10px;
+}
+
+.footer{
+  padding-top: 25px;
+  text-align: center;
+  width:100%;
+  background:black;
+}
+
+
+.social{
+  height:40px;
+  width: 40px;
+}
+.body {
+  background-image: url('images0.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>

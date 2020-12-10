@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="index.js" type="text/javascript"></script>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' rel='stylesheet' type='text/css'>
+
+<title>Ibra Gym</title>
+
+<style>
+body {
+  background-image: url('front1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+<div id="row1">
+
+<div id="hexagon">
+
+</div>
+
+
+
+
+
+<div class='navbar'>
+
+  <ul>
+  <li><a href='index.html'><span>Home</span></a></li>
+  <li ><a href='classes.html'><span> Classes</span></a></li>
+  <li><a href='subscribe.html'><span>Membership</span></a></li>
+   <li><a href='location.html'><span>Locations</span></a></li>
+   <li><a href='aboutUs.html'><span>About</span></a></li>
+       <li><a href='contact.html'><span>Contact Us</span></a></li>
+
+  </ul>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="pilates.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="weightlifting.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="yoga.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Spinning.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="CrossFit.jpg" style="width:100%">
+  </div>
+    
+   <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Zumba.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="pilates.jpg" style="width:100%" onclick="currentSlide(1)" alt="Pilates Classes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="weightlifting.jpg" style="width:100%" onclick="currentSlide(2)" alt="weightlifting Classes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="yoga.jpg" style="width:100%" onclick="currentSlide(3)" alt="Yogo Classes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Spinning.jpg" style="width:100%" onclick="currentSlide(4)" alt="Spining Classes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="CrossFit.jpg" style="width:100%" onclick="currentSlide(5)" alt="CrossFit Classes">
+    </div>    
+	<div class="column">
+      <img class="demo cursor" src="Zumba.jpg" style="width:100%" onclick="currentSlide(6)" alt="Zumba Classes">
+    </div>    
+	
+      </div>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+<div class="crow3">
+  <div class="left3">
+<h1>In Ibra Gym</h1>
+<ul>
+<li>    We open 24 hours 7 days. </li>
+<li>   We have many locations Open 24 Hours! </li>
+<li>   Tons of equipment; free weights, cardiovascular machines, stretching area </li>
+<li> Free Guest Privileges  </li>
+<li>   We offer support because we care!</li>
+<li>   We care because we love to serve our Customers</li>
+
+
+
+
+
+
+
+
+
+
+<p>
+  </div>
+  <div class="right3">
+      <h1> Our Program during the week</h1>
+      <hr class="line">
+    <div class="tabs">
+        <ul class="tab-links">
+            <li class="active"><a href="#tab1">Monday</a></li>
+            <li><a href="#tab2">Tuesday</a></li>
+            <li><a href="#tab3">Wednesday</a></li>
+            <li><a href="#tab4">Thursday</a></li>
+            <li><a href="#tab5">Friday</a></li>
+            <li><a href="#tab6">Saturday</a></li>
+            <li><a href="#tab7">Sunday</a></li>
+        </ul>
+
+
+        <div class="tab-content">
+
+            <div id="tab1" class="tab active">
+              <h2>Yoga</h2>
+			  <p>7:00AM-8:00AM Everyone</p>
+              <p>7:30PM-9:00PM Beginners</p>
+              <p>9:00PM-10:30PM Experienced</p>
+			  
+			  <h2>Zumba</h2>
+			  <p>11:00AM-13:00AM Everyone</p>
+              <p>13:30PM-15:00PM Beginners</p>
+              <p>16:00PM-17:30PM Experienced</p>	 
+			  
+            </div>
+
+            <div id="tab2" class="tab">
+                <h2>Zumba</h2>
+              <p>7:30PM-9:00PM Teens 17&Under</p>
+              <p>9:00PM-10:30PM Adults 18&Up</p>
+			  
+			    <h2>crossFit</h2>
+              <p>11:30AM-13:30PM Teens 17&Under</p>
+              <p>14:00PM-16:30PM Adults 18&Up</p>
+			  
+            </div>
+
+            <div id="tab3" class="tab">
+          <h2>spinning</h2>
+			  <p>7:00AM-8:00AM Everyone</p>
+              <p>7:30PM-9:00PM Beginners</p>
+                <p>9:00PM-10:30PM Experienced</p>
+            </div>
+
+            <div id="tab4" class="tab">
+            <h2>Pilates</h2>
+               <p>7:00AM-8:00AM Everyone</p>
+              <p>7:30PM-9:00PM Beginners</p>
+                <p>9:00PM-10:30PM Experienced</p>
+            </div>
+
+            <div id="tab5" class="tab">
+               <h2>weightlifting</h2>
+               <p>7:00AM-8:00AM Everyone</p>
+			   <br>
+			   <br>
+<h2>weightlifting</h2>
+ <p>7:30PM-9:00PM Everyone</p>
+
+<br>
+<br>
+        <h2>Zumba</h2>
+
+              <p>9:00PM-10:30PM Adults 18&Up</p>
+            </div>
+
+
+
+            <div id="tab6" class="tab">
+
+			<h2>Yoga</h2>
+			<p>7:30PM-9:00PM Everyone</p>
+
+			<br>
+              <h2>Zumba and CrossFit</h2>
+            <p>9:30AM-11:00AM Teens 17&Under</p>
+            <p>11:30AM-01:30PM Adults 18&Up</p>
+
+
+			<br>
+			<h2>weightlifting</h2>
+			<p>1:30PM-3:00PM Everyone</p>
+
+
+			<br>
+			<h2>Pilates</h2>
+               <p>3:00PM-4:30PM Everyone</p>
+            </div>
+
+            <div id="tab7" class="tab">
+              <h2>Open Matt</h2>
+            <p>9:30AM-11:00AM Teens 17&Under </p>
+            <p>11:30AM-01:30PM Adults 18&Up </p>
+			
+			
+			
+            </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="footer">
+<div class="location">
+<p>
+8444 40th Avenue Brooklyn, New York, 11214<br>
+Phone: 121-121-1114
+<p>Copyright ©2020 All Rights Reserved to Mustapha_Bouchaqour®Ibra-gym</p>
+
+</p>
+
+</div>
+
+
+
+
+
+
+
+
+<a href="https://www.facebook.com/BlinkFitness/"> <img class="social" src="facebook.svg"></a>
+<a href="https://www.youtube.com/watch?v=g3ZNprweps0"> <img class="social" src="youtube.svg"></a>
+
+
+</div>
+</div>
+
+
+</body>
+</html>
